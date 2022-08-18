@@ -1,13 +1,13 @@
 
-# Esportudo - Desafio
+# Esportudo - Challenge
 
-Esse aplicativo por ser um teste é bem simples para ter o melhor desepenho e apresentação, nele contém exibições de informações
-sobre **Futebol** assim como: Classificações, Times, Jogadores, etc.
+This application, being a test, is very simple to have the best performance and presentation, it contains information displays
+about **Football** as well as: Leaderboards, Teams, Players, etc.
 
 
 ## Deploy Android
 
-Para fazer o deploy desse projeto em android rode
+To deploy this project on android, run
 
 ```bash
   yarn android
@@ -15,39 +15,39 @@ Para fazer o deploy desse projeto em android rode
 
 ## Deploy IOS
 
-Para fazer o deploy desse projeto em ios rode
+To deploy this project on ios, run
 
 ```bash
   yarn ios
 ```
 
 
-## Testes
+## Tests
 
-Para para rodar os testes
+To run the tests
 
 ```bash
   yarn test
 ```
 
-Os testes foram criados para validação de renderização, podendo ser atualizados e melhorados para validação de retorno de API
+Tests were created for rendering validation and can be updated and improved for API return validation
 
 
-## Autor
+## Author
 
 - [@gu00mello](https://www.github.com/gu00mello)
 
 
-## Funcionalidades
+## Functionalities
 
-- Exibição de Times
-- Exibição de Jogadores
-- Exibição de Classificações
-- Exibição de Ligas
-- Exibição de Trófeus
+- Time display
+- Players display
+- Ratings display
+- Leagues display
+- Trophy Display
 
 
-## Stack utilizada
+## Stack used
 
 **Front-end:** React, React-Native, ContextAPI, Styled Components, Axios, React-Navigation
 
