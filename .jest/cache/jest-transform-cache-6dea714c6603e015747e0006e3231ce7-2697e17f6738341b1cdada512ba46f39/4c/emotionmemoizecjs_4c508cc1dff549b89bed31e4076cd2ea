@@ -1,0 +1,9 @@
+15ffda51011715e92c16739bf739505c
+'use strict';
+
+if ("test" === "production") {
+  module.exports = require("./emotion-memoize.cjs.prod.js");
+} else {
+  module.exports = require("./emotion-memoize.cjs.dev.js");
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJtb2R1bGUiLCJleHBvcnRzIiwicmVxdWlyZSJdLCJzb3VyY2VzIjpbImVtb3Rpb24tbWVtb2l6ZS5janMuanMiXSwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBzdHJpY3QnO1xuXG5pZiAocHJvY2Vzcy5lbnYuTk9ERV9FTlYgPT09IFwicHJvZHVjdGlvblwiKSB7XG4gIG1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcIi4vZW1vdGlvbi1tZW1vaXplLmNqcy5wcm9kLmpzXCIpO1xufSBlbHNlIHtcbiAgbW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwiLi9lbW90aW9uLW1lbW9pemUuY2pzLmRldi5qc1wiKTtcbn1cbiJdLCJtYXBwaW5ncyI6IkFBQUE7O0FBRUEsSUFBSSxXQUF5QixZQUE3QixFQUEyQztFQUN6Q0EsTUFBTSxDQUFDQyxPQUFQLEdBQWlCQyxPQUFPLENBQUMsK0JBQUQsQ0FBeEI7QUFDRCxDQUZELE1BRU87RUFDTEYsTUFBTSxDQUFDQyxPQUFQLEdBQWlCQyxPQUFPLENBQUMsOEJBQUQsQ0FBeEI7QUFDRCJ9

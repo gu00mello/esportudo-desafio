@@ -1,0 +1,5 @@
+b6ab2844d95376114cfab5bf4fbc181f
+'use strict';
+
+module.exports = require('./lib');
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJtb2R1bGUiLCJleHBvcnRzIiwicmVxdWlyZSJdLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sInNvdXJjZXNDb250ZW50IjpbIid1c2Ugc3RyaWN0JztcblxubW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKCcuL2xpYicpXG4iXSwibWFwcGluZ3MiOiJBQUFBOztBQUVBQSxNQUFNLENBQUNDLE9BQVAsR0FBaUJDLE9BQU8sQ0FBQyxPQUFELENBQXhCIn0=

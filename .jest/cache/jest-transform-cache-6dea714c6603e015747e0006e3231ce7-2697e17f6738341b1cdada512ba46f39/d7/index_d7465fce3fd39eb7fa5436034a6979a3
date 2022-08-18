@@ -1,0 +1,93 @@
+4bcc5393550070a39bb6f14132f04490
+"use strict";
+
+var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  var desc = Object.getOwnPropertyDescriptor(m, k);
+
+  if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+    desc = {
+      enumerable: true,
+      get: function get() {
+        return m[k];
+      }
+    };
+  }
+
+  Object.defineProperty(o, k2, desc);
+} : function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  o[k2] = m[k];
+});
+
+var __setModuleDefault = this && this.__setModuleDefault || (Object.create ? function (o, v) {
+  Object.defineProperty(o, "default", {
+    enumerable: true,
+    value: v
+  });
+} : function (o, v) {
+  o["default"] = v;
+});
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+  }
+
+  __setModuleDefault(result, mod);
+
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var React = __importStar(require("react"));
+
+var styles_1 = require("./styles");
+
+var News = function News(_ref) {
+  var navigation = _ref.navigation;
+  var news = [{
+    title: 'Ronaldo pushing for Man City move',
+    complete_title: 'LIVE Transfer Talk: Ronaldo pushing for Man City move',
+    image: require('../../assets/notice.1.jpg'),
+    views: '125,908',
+    posted: '2 days ago',
+    author: 'Gusta Mello'
+  }, {
+    title: "City to sign Kane? Top clubs' needs ahead...",
+    complete_title: 'LIVE Transfer Talk: Ronaldo pushing for Man City move',
+    image: require('../../assets/notice.2.jpg'),
+    views: '125,908',
+    posted: '2 days ago',
+    author: 'Iarlen Aquiles'
+  }, {
+    title: "Vinicius Jr.'s been too busy becoming...",
+    complete_title: 'LIVE Transfer Talk: Ronaldo pushing for Man City move',
+    image: require('../../assets/notice.3.jpg'),
+    views: '125,908',
+    posted: '2 days ago',
+    author: 'Bruno Araujo'
+  }, {
+    title: "Vinicius Jr.'s been too busy becoming...",
+    complete_title: 'LIVE Transfer Talk: Ronaldo pushing for Man City move',
+    image: require('../../assets/notice.3.jpg'),
+    views: '125,908',
+    posted: '2 days ago',
+    author: 'Bruno Araujo'
+  }];
+  return React.createElement(styles_1.StyledContainer, null, React.createElement(styles_1.StyledNewsHeader, null, React.createElement(styles_1.StyledTitle, null, "Latest News"), React.createElement(styles_1.StyledText, null, "View all")), news.map(function (notice, index) {
+    return React.createElement(styles_1.StyledNotice, {
+      key: index
+    }, React.createElement(styles_1.StyledNoticeImage, {
+      source: notice.image
+    }), React.createElement(styles_1.StyledNoticeContent, null, React.createElement(styles_1.StyledNoticeTitle, null, notice.title), React.createElement(styles_1.StyledNoticeText, null, notice.views, " views   \u2022  ", notice.posted), React.createElement(styles_1.StyledNoticeAuthor, null, notice.author)));
+  }));
+};
+
+exports.default = News;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBOztBQUVBOztBQXNCQSxJQUFNQSxJQUFJLEdBQUcsU0FBUEEsSUFBTyxPQUF3QjtFQUFBLElBQXJCQyxVQUFxQixRQUFyQkEsVUFBcUI7RUFDakMsSUFBTUMsSUFBSSxHQUFHLENBQ1Q7SUFDSUMsS0FBSyxFQUFFLG1DQURYO0lBRUlDLGNBQWMsRUFBRSx1REFGcEI7SUFHSUMsS0FBSyxFQUFFQyxPQUFPLENBQUMsMkJBQUQsQ0FIbEI7SUFJSUMsS0FBSyxFQUFFLFNBSlg7SUFLSUMsTUFBTSxFQUFFLFlBTFo7SUFNSUMsTUFBTSxFQUFFO0VBTlosQ0FEUyxFQVNUO0lBQ0lOLEtBQUssRUFBRSw4Q0FEWDtJQUVJQyxjQUFjLEVBQUUsdURBRnBCO0lBR0lDLEtBQUssRUFBRUMsT0FBTyxDQUFDLDJCQUFELENBSGxCO0lBSUlDLEtBQUssRUFBRSxTQUpYO0lBS0lDLE1BQU0sRUFBRSxZQUxaO0lBTUlDLE1BQU0sRUFBRTtFQU5aLENBVFMsRUFpQlQ7SUFDSU4sS0FBSyxFQUFFLDBDQURYO0lBRUlDLGNBQWMsRUFBRSx1REFGcEI7SUFHSUMsS0FBSyxFQUFFQyxPQUFPLENBQUMsMkJBQUQsQ0FIbEI7SUFJSUMsS0FBSyxFQUFFLFNBSlg7SUFLSUMsTUFBTSxFQUFFLFlBTFo7SUFNSUMsTUFBTSxFQUFFO0VBTlosQ0FqQlMsRUF5QlQ7SUFDSU4sS0FBSyxFQUFFLDBDQURYO0lBRUlDLGNBQWMsRUFBRSx1REFGcEI7SUFHSUMsS0FBSyxFQUFFQyxPQUFPLENBQUMsMkJBQUQsQ0FIbEI7SUFJSUMsS0FBSyxFQUFFLFNBSlg7SUFLSUMsTUFBTSxFQUFFLFlBTFo7SUFNSUMsTUFBTSxFQUFFO0VBTlosQ0F6QlMsQ0FBYjtFQW1DQSxPQUNJLG9CQUFDLFFBQUQsQ0FBQyxlQUFELFFBQ0ksb0JBQUMsUUFBRCxDQUFDLGdCQUFELFFBQ0ksb0JBQUMsUUFBRCxDQUFDLFdBQUQsc0JBREosRUFJSSxvQkFBQyxRQUFELENBQUMsVUFBRCxtQkFKSixDQURKLEVBU0tQLElBQUksQ0FBQ1EsR0FBTCxDQUFTLFVBQUNDLE1BQUQsRUFBc0JDLEtBQXRCLEVBQXVDO0lBQzdDLE9BQU8sb0JBQUMsUUFBRCxDQUFDLFlBQUQ7TUFBYyxHQUFHLEVBQUVBO0lBQW5CLEdBQ0gsb0JBQUMsUUFBRCxDQUFDLGlCQUFEO01BQW1CLE1BQU0sRUFBRUQsTUFBTSxDQUFDTjtJQUFsQyxFQURHLEVBRUgsb0JBQUMsUUFBRCxDQUFDLG1CQUFELFFBQ0ksb0JBQUMsUUFBRCxDQUFDLGlCQUFELFFBQ0tNLE1BQU0sQ0FBQ1IsS0FEWixDQURKLEVBSUksb0JBQUMsUUFBRCxDQUFDLGdCQUFELFFBQ0tRLE1BQU0sQ0FBQ0osS0FEWix1QkFDK0JJLE1BQU0sQ0FBQ0gsTUFEdEMsQ0FKSixFQU9JLG9CQUFDLFFBQUQsQ0FBQyxrQkFBRCxRQUNLRyxNQUFNLENBQUNGLE1BRFosQ0FQSixDQUZHLENBQVA7RUFjSCxDQWZBLENBVEwsQ0FESjtBQTRCSCxDQWhFRDs7QUFrRUFJLGtCQUFlYixJQUFmIiwibmFtZXMiOlsiTmV3cyIsIm5hdmlnYXRpb24iLCJuZXdzIiwidGl0bGUiLCJjb21wbGV0ZV90aXRsZSIsImltYWdlIiwicmVxdWlyZSIsInZpZXdzIiwicG9zdGVkIiwiYXV0aG9yIiwibWFwIiwibm90aWNlIiwiaW5kZXgiLCJleHBvcnRzIl0sInNvdXJjZXMiOlsiRDpcXHByb2plY3RzXFxFc3BvcnR1ZG9cXHNyY1xcY29tcG9uZW50c1xcTmV3c1xcaW5kZXgudHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAqIGFzIFJlYWN0IGZyb20gJ3JlYWN0JztcclxuaW1wb3J0IHsgSW1hZ2VTb3VyY2VQcm9wVHlwZSB9IGZyb20gJ3JlYWN0LW5hdGl2ZSc7XHJcbmltcG9ydCB7XHJcbiAgICBTdHlsZWRDb250YWluZXIsXHJcbiAgICBTdHlsZWROZXdzSGVhZGVyLFxyXG4gICAgU3R5bGVkVGl0bGUsXHJcbiAgICBTdHlsZWRUZXh0LFxyXG4gICAgU3R5bGVkTm90aWNlLFxyXG4gICAgU3R5bGVkTm90aWNlSW1hZ2UsXHJcbiAgICBTdHlsZWROb3RpY2VDb250ZW50LFxyXG4gICAgU3R5bGVkTm90aWNlVGl0bGUsXHJcbiAgICBTdHlsZWROb3RpY2VUZXh0LFxyXG4gICAgU3R5bGVkTm90aWNlQXV0aG9yXHJcbn0gZnJvbSAnLi9zdHlsZXMnO1xyXG5cclxudHlwZSBOb3RpY2VQcm9wcyA9IHtcclxuICAgIHRpdGxlOiBzdHJpbmcsXHJcbiAgICBjb21wbGV0ZV90aXRsZTogc3RyaW5nLFxyXG4gICAgaW1hZ2U6IEltYWdlU291cmNlUHJvcFR5cGUgJiBzdHJpbmcsXHJcbiAgICB2aWV3czogc3RyaW5nLFxyXG4gICAgcG9zdGVkOiBzdHJpbmcsXHJcbiAgICBhdXRob3I6IHN0cmluZ1xyXG59XHJcblxyXG5jb25zdCBOZXdzID0gKHsgbmF2aWdhdGlvbiB9OiBhbnkpID0+IHtcclxuICAgIGNvbnN0IG5ld3MgPSBbXHJcbiAgICAgICAge1xyXG4gICAgICAgICAgICB0aXRsZTogJ1JvbmFsZG8gcHVzaGluZyBmb3IgTWFuIENpdHkgbW92ZScsXHJcbiAgICAgICAgICAgIGNvbXBsZXRlX3RpdGxlOiAnTElWRSBUcmFuc2ZlciBUYWxrOiBSb25hbGRvIHB1c2hpbmcgZm9yIE1hbiBDaXR5IG1vdmUnLFxyXG4gICAgICAgICAgICBpbWFnZTogcmVxdWlyZSgnLi4vLi4vYXNzZXRzL25vdGljZS4xLmpwZycpLFxyXG4gICAgICAgICAgICB2aWV3czogJzEyNSw5MDgnLFxyXG4gICAgICAgICAgICBwb3N0ZWQ6ICcyIGRheXMgYWdvJyxcclxuICAgICAgICAgICAgYXV0aG9yOiAnR3VzdGEgTWVsbG8nXHJcbiAgICAgICAgfSxcclxuICAgICAgICB7XHJcbiAgICAgICAgICAgIHRpdGxlOiBcIkNpdHkgdG8gc2lnbiBLYW5lPyBUb3AgY2x1YnMnIG5lZWRzIGFoZWFkLi4uXCIsXHJcbiAgICAgICAgICAgIGNvbXBsZXRlX3RpdGxlOiAnTElWRSBUcmFuc2ZlciBUYWxrOiBSb25hbGRvIHB1c2hpbmcgZm9yIE1hbiBDaXR5IG1vdmUnLFxyXG4gICAgICAgICAgICBpbWFnZTogcmVxdWlyZSgnLi4vLi4vYXNzZXRzL25vdGljZS4yLmpwZycpLFxyXG4gICAgICAgICAgICB2aWV3czogJzEyNSw5MDgnLFxyXG4gICAgICAgICAgICBwb3N0ZWQ6ICcyIGRheXMgYWdvJyxcclxuICAgICAgICAgICAgYXV0aG9yOiAnSWFybGVuIEFxdWlsZXMnXHJcbiAgICAgICAgfSxcclxuICAgICAgICB7XHJcbiAgICAgICAgICAgIHRpdGxlOiBcIlZpbmljaXVzIEpyLidzIGJlZW4gdG9vIGJ1c3kgYmVjb21pbmcuLi5cIixcclxuICAgICAgICAgICAgY29tcGxldGVfdGl0bGU6ICdMSVZFIFRyYW5zZmVyIFRhbGs6IFJvbmFsZG8gcHVzaGluZyBmb3IgTWFuIENpdHkgbW92ZScsXHJcbiAgICAgICAgICAgIGltYWdlOiByZXF1aXJlKCcuLi8uLi9hc3NldHMvbm90aWNlLjMuanBnJyksXHJcbiAgICAgICAgICAgIHZpZXdzOiAnMTI1LDkwOCcsXHJcbiAgICAgICAgICAgIHBvc3RlZDogJzIgZGF5cyBhZ28nLFxyXG4gICAgICAgICAgICBhdXRob3I6ICdCcnVubyBBcmF1am8nXHJcbiAgICAgICAgfSxcclxuICAgICAgICB7XHJcbiAgICAgICAgICAgIHRpdGxlOiBcIlZpbmljaXVzIEpyLidzIGJlZW4gdG9vIGJ1c3kgYmVjb21pbmcuLi5cIixcclxuICAgICAgICAgICAgY29tcGxldGVfdGl0bGU6ICdMSVZFIFRyYW5zZmVyIFRhbGs6IFJvbmFsZG8gcHVzaGluZyBmb3IgTWFuIENpdHkgbW92ZScsXHJcbiAgICAgICAgICAgIGltYWdlOiByZXF1aXJlKCcuLi8uLi9hc3NldHMvbm90aWNlLjMuanBnJyksXHJcbiAgICAgICAgICAgIHZpZXdzOiAnMTI1LDkwOCcsXHJcbiAgICAgICAgICAgIHBvc3RlZDogJzIgZGF5cyBhZ28nLFxyXG4gICAgICAgICAgICBhdXRob3I6ICdCcnVubyBBcmF1am8nXHJcbiAgICAgICAgfVxyXG4gICAgXTtcclxuXHJcbiAgICByZXR1cm4gKFxyXG4gICAgICAgIDxTdHlsZWRDb250YWluZXI+XHJcbiAgICAgICAgICAgIDxTdHlsZWROZXdzSGVhZGVyPlxyXG4gICAgICAgICAgICAgICAgPFN0eWxlZFRpdGxlPlxyXG4gICAgICAgICAgICAgICAgICAgIExhdGVzdCBOZXdzXHJcbiAgICAgICAgICAgICAgICA8L1N0eWxlZFRpdGxlPlxyXG4gICAgICAgICAgICAgICAgPFN0eWxlZFRleHQ+XHJcbiAgICAgICAgICAgICAgICAgICAgVmlldyBhbGxcclxuICAgICAgICAgICAgICAgIDwvU3R5bGVkVGV4dD5cclxuICAgICAgICAgICAgPC9TdHlsZWROZXdzSGVhZGVyPlxyXG4gICAgICAgICAgICB7bmV3cy5tYXAoKG5vdGljZTogTm90aWNlUHJvcHMsIGluZGV4OiBudW1iZXIpID0+IHtcclxuICAgICAgICAgICAgICAgIHJldHVybiA8U3R5bGVkTm90aWNlIGtleT17aW5kZXh9PlxyXG4gICAgICAgICAgICAgICAgICAgIDxTdHlsZWROb3RpY2VJbWFnZSBzb3VyY2U9e25vdGljZS5pbWFnZX0gLz5cclxuICAgICAgICAgICAgICAgICAgICA8U3R5bGVkTm90aWNlQ29udGVudD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPFN0eWxlZE5vdGljZVRpdGxlPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAge25vdGljZS50aXRsZX1cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC9TdHlsZWROb3RpY2VUaXRsZT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPFN0eWxlZE5vdGljZVRleHQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICB7bm90aWNlLnZpZXdzfSB2aWV3cyAgIOKAoiAge25vdGljZS5wb3N0ZWR9XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvU3R5bGVkTm90aWNlVGV4dD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPFN0eWxlZE5vdGljZUF1dGhvcj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIHtub3RpY2UuYXV0aG9yfVxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L1N0eWxlZE5vdGljZUF1dGhvcj5cclxuICAgICAgICAgICAgICAgICAgICA8L1N0eWxlZE5vdGljZUNvbnRlbnQ+XHJcbiAgICAgICAgICAgICAgICA8L1N0eWxlZE5vdGljZT5cclxuICAgICAgICAgICAgfSl9XHJcbiAgICAgICAgPC9TdHlsZWRDb250YWluZXI+XHJcbiAgICApO1xyXG59O1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgTmV3cztcclxuIl19

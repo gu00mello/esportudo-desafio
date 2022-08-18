@@ -1,0 +1,86 @@
+0577d99b562bf8b65c7e20b0acbad5ba
+"use strict";
+
+var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  var desc = Object.getOwnPropertyDescriptor(m, k);
+
+  if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+    desc = {
+      enumerable: true,
+      get: function get() {
+        return m[k];
+      }
+    };
+  }
+
+  Object.defineProperty(o, k2, desc);
+} : function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  o[k2] = m[k];
+});
+
+var __setModuleDefault = this && this.__setModuleDefault || (Object.create ? function (o, v) {
+  Object.defineProperty(o, "default", {
+    enumerable: true,
+    value: v
+  });
+} : function (o, v) {
+  o["default"] = v;
+});
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+  }
+
+  __setModuleDefault(result, mod);
+
+  return result;
+};
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var React = __importStar(require("react"));
+
+var react_native_1 = require("react-native");
+
+var styles_1 = require("./styles");
+
+var react_native_2 = require("react-native");
+
+var News_1 = __importDefault(require("../../components/News"));
+
+var Home = function Home(_ref) {
+  var navigation = _ref.navigation;
+  return React.createElement(react_native_2.ScrollView, null, React.createElement(styles_1.StyledContainer, null, React.createElement(styles_1.StyledGradient, {
+    start: {
+      x: 0,
+      y: 0
+    },
+    end: {
+      x: 1,
+      y: 0
+    },
+    colors: ['#4C4478', '#0C0C69']
+  }, React.createElement(styles_1.StyledTag, null, React.createElement(react_native_1.Image, {
+    source: require('../../assets/iconly.soccer.png')
+  }), React.createElement(styles_1.StyledTagText, null, "Football")), React.createElement(styles_1.StyledTitle, null, "Zidane and Real Madrid: Where it went wrong and what's next"), React.createElement(styles_1.StyledDiscoverDate, null, "Tomorrow, 10:00 AM"), React.createElement(styles_1.StyledDiscoverImage, {
+    source: require('../../assets/discover.image.png')
+  })), React.createElement(News_1.default, {
+    navigation: navigation
+  })));
+};
+
+exports.default = Home;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBOztBQUNBOztBQUNBOztBQVVBOztBQUNBOztBQUVBLElBQU1BLElBQUksR0FBRyxTQUFQQSxJQUFPLE9BQXdCO0VBQUEsSUFBckJDLFVBQXFCLFFBQXJCQSxVQUFxQjtFQUNqQyxPQUNBLG9CQUFDLGNBQUQsQ0FBQyxVQUFELFFBQ0ksb0JBQUMsUUFBRCxDQUFDLGVBQUQsUUFDSSxvQkFBQyxRQUFELENBQUMsY0FBRDtJQUNJLEtBQUssRUFBRTtNQUFFQyxDQUFDLEVBQUUsQ0FBTDtNQUFRQyxDQUFDLEVBQUU7SUFBWCxDQURYO0lBRUksR0FBRyxFQUFFO01BQUVELENBQUMsRUFBRSxDQUFMO01BQVFDLENBQUMsRUFBRTtJQUFYLENBRlQ7SUFHSSxNQUFNLEVBQUUsQ0FBQyxTQUFELEVBQVksU0FBWjtFQUhaLEdBS0ksb0JBQUMsUUFBRCxDQUFDLFNBQUQsUUFDSSxvQkFBQyxjQUFELENBQUMsS0FBRDtJQUFPLE1BQU0sRUFBRUMsT0FBTyxDQUFDLGdDQUFEO0VBQXRCLEVBREosRUFFSSxvQkFBQyxRQUFELENBQUMsYUFBRCxtQkFGSixDQUxKLEVBU0ksb0JBQUMsUUFBRCxDQUFDLFdBQUQsc0VBVEosRUFZSSxvQkFBQyxRQUFELENBQUMsa0JBQUQsNkJBWkosRUFlSSxvQkFBQyxRQUFELENBQUMsbUJBQUQ7SUFBcUIsTUFBTSxFQUFFQSxPQUFPLENBQUMsaUNBQUQ7RUFBcEMsRUFmSixDQURKLEVBa0JJLG9CQUFDLE1BQUQsQ0FBQyxPQUFEO0lBQU0sVUFBVSxFQUFFSDtFQUFsQixFQWxCSixDQURKLENBREE7QUF3QkgsQ0F6QkQ7O0FBMkJBSSxrQkFBZUwsSUFBZiIsIm5hbWVzIjpbIkhvbWUiLCJuYXZpZ2F0aW9uIiwieCIsInkiLCJyZXF1aXJlIiwiZXhwb3J0cyJdLCJzb3VyY2VzIjpbIkQ6XFxwcm9qZWN0c1xcRXNwb3J0dWRvXFxzcmNcXHNjcmVlbnNcXEhvbWVcXGluZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgKiBhcyBSZWFjdCBmcm9tIFwicmVhY3RcIjtcclxuaW1wb3J0IHsgSW1hZ2UgfSBmcm9tIFwicmVhY3QtbmF0aXZlXCI7XHJcbmltcG9ydCB7XHJcbiAgICBTdHlsZWRDb250YWluZXIsXHJcbiAgICBTdHlsZWRHcmFkaWVudCxcclxuICAgIFN0eWxlZERpc2NvdmVySW1hZ2UsXHJcbiAgICBTdHlsZWRUYWcsXHJcbiAgICBTdHlsZWRUYWdUZXh0LFxyXG4gICAgU3R5bGVkVGl0bGUsXHJcbiAgICBTdHlsZWREaXNjb3ZlckRhdGVcclxufSBmcm9tICcuL3N0eWxlcyc7XHJcblxyXG5pbXBvcnQgeyBTY3JvbGxWaWV3IH0gZnJvbSBcInJlYWN0LW5hdGl2ZVwiO1xyXG5pbXBvcnQgTmV3cyBmcm9tIFwiLi4vLi4vY29tcG9uZW50cy9OZXdzXCI7XHJcblxyXG5jb25zdCBIb21lID0gKHsgbmF2aWdhdGlvbiB9OiBhbnkpID0+IHtcclxuICAgIHJldHVybiAoXHJcbiAgICA8U2Nyb2xsVmlldz5cclxuICAgICAgICA8U3R5bGVkQ29udGFpbmVyPlxyXG4gICAgICAgICAgICA8U3R5bGVkR3JhZGllbnRcclxuICAgICAgICAgICAgICAgIHN0YXJ0PXt7IHg6IDAsIHk6IDAgfX1cclxuICAgICAgICAgICAgICAgIGVuZD17eyB4OiAxLCB5OiAwIH19XHJcbiAgICAgICAgICAgICAgICBjb2xvcnM9e1snIzRDNDQ3OCcsICcjMEMwQzY5J119XHJcbiAgICAgICAgICAgID5cclxuICAgICAgICAgICAgICAgIDxTdHlsZWRUYWc+XHJcbiAgICAgICAgICAgICAgICAgICAgPEltYWdlIHNvdXJjZT17cmVxdWlyZSgnLi4vLi4vYXNzZXRzL2ljb25seS5zb2NjZXIucG5nJyl9IC8+XHJcbiAgICAgICAgICAgICAgICAgICAgPFN0eWxlZFRhZ1RleHQ+Rm9vdGJhbGw8L1N0eWxlZFRhZ1RleHQ+XHJcbiAgICAgICAgICAgICAgICA8L1N0eWxlZFRhZz5cclxuICAgICAgICAgICAgICAgIDxTdHlsZWRUaXRsZT5cclxuICAgICAgICAgICAgICAgICAgICBaaWRhbmUgYW5kIFJlYWwgTWFkcmlkOiBXaGVyZSBpdCB3ZW50IHdyb25nIGFuZCB3aGF0J3MgbmV4dFxyXG4gICAgICAgICAgICAgICAgPC9TdHlsZWRUaXRsZT5cclxuICAgICAgICAgICAgICAgIDxTdHlsZWREaXNjb3ZlckRhdGU+XHJcbiAgICAgICAgICAgICAgICAgICAgVG9tb3Jyb3csIDEwOjAwIEFNXHJcbiAgICAgICAgICAgICAgICA8L1N0eWxlZERpc2NvdmVyRGF0ZT5cclxuICAgICAgICAgICAgICAgIDxTdHlsZWREaXNjb3ZlckltYWdlIHNvdXJjZT17cmVxdWlyZSgnLi4vLi4vYXNzZXRzL2Rpc2NvdmVyLmltYWdlLnBuZycpfSAvPlxyXG4gICAgICAgICAgICA8L1N0eWxlZEdyYWRpZW50PlxyXG4gICAgICAgICAgICA8TmV3cyBuYXZpZ2F0aW9uPXtuYXZpZ2F0aW9ufSAvPlxyXG4gICAgICAgIDwvU3R5bGVkQ29udGFpbmVyPlxyXG4gICAgPC9TY3JvbGxWaWV3PlxyXG4gICAgKTtcclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgSG9tZTsiXX0=

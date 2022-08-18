@@ -1,0 +1,1 @@
+{"version":3,"names":["module","exports","require"],"sources":["index.js"],"sourcesContent":["module.exports = require('./lib/axios');"],"mappings":"AAAAA,MAAM,CAACC,OAAP,GAAiBC,OAAO,CAAC,aAAD,CAAxB"}

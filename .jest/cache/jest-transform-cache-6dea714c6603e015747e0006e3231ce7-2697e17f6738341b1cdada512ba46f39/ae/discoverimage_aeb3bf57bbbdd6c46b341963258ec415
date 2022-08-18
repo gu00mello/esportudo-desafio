@@ -1,0 +1,5 @@
+cf8ba61a240759297c74653cd7e28624
+module.exports = {
+      testUri:
+        "../../../src/assets/discover.image.png"
+    };

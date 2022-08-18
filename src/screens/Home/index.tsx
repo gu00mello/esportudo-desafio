@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Image } from "react-native";
 import {
     StyledContainer,
@@ -14,7 +14,8 @@ import { ScrollView } from "react-native";
 import News from "../../components/News";
 
 const Home = ({ navigation }: any) => {
-    return (<ScrollView>
+    return (
+    <ScrollView>
         <StyledContainer>
             <StyledGradient
                 start={{ x: 0, y: 0 }}

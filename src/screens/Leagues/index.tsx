@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import * as  React from "react";
+import { useState, useEffect } from "react";
 import { useLeagues } from "../../context/Leagues";
 import { ScrollView } from "react-native";
 import {
