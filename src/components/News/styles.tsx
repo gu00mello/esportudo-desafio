@@ -22,14 +22,12 @@ export const StyledNewsHeader = styled(RN.View)`
 
 export const StyledTitle = styled(RN.Text)`
     font-size: 20px;
-    font-family: Roboto;
     font-weight: bold;
     color: #fff;
 `;
 
 export const StyledText = styled(RN.Text)`
     font-size: 12px;
-    font-family: Roboto;
     color: #808191;
     text-transform: uppercase;
 `;
@@ -58,7 +56,6 @@ export const StyledNoticeContent = styled(RN.View)`
 
 export const StyledNoticeTitle = styled(RN.Text)`
     font-size: 16px;
-    font-family: Roboto;
     font-weight: bold;
     color: #fff;
     margin: 0 0 5px 0;
@@ -66,13 +63,11 @@ export const StyledNoticeTitle = styled(RN.Text)`
 
 export const StyledNoticeText = styled(RN.Text)`
     font-size: 14px;
-    font-family: Roboto;
     color: #808191;
     margin: 0 0 5px 0;
 `;
 
 export const StyledNoticeAuthor = styled(RN.Text)`
     font-size: 14px;
-    font-family: Roboto;
     color: #9780B5;
 `;

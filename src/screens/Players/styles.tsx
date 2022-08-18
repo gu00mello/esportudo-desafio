@@ -46,7 +46,6 @@ export const StyledTableContent = styled(RN.View) <TableContentProps>`
 
 export const StyledTableTitle = styled(RN.Text)`
     font-size: 16px;
-    font-family: Roboto;
     font-weight: bold;
     color: #fff;
     margin: 0 0 5px 0;
@@ -54,7 +53,6 @@ export const StyledTableTitle = styled(RN.Text)`
 
 export const StyledTableText = styled(RN.Text)`
     font-size: 14px;
-    font-family: Roboto;
     color: #808191;
     margin: 0 0 5px 0;
 `;

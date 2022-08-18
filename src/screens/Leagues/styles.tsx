@@ -42,7 +42,6 @@ export const StyledLeagueContent = styled(RN.View)`
 
 export const StyledLeagueTitle = styled(RN.Text)`
     font-size: 16px;
-    font-family: Roboto;
     font-weight: bold;
     color: #fff;
     margin: 0 0 5px 0;
@@ -50,7 +49,6 @@ export const StyledLeagueTitle = styled(RN.Text)`
 
 export const StyledLeagueText = styled(RN.Text)`
     font-size: 14px;
-    font-family: Roboto;
     color: #808191;
     margin: 0 0 5px 0;
 `;

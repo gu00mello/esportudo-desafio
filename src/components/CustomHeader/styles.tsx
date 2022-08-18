@@ -13,7 +13,6 @@ export const StyledView = styled(RN.View)`
 export const StyledText = styled(RN.Text)`
     color: #808191;
     font-size: 18px;
-    font-family: Roboto;
     font-weight: bold;
 `;
 
