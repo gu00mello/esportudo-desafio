@@ -11,7 +11,6 @@ export const StyledContainer = styled(RN.View)`
 
 export const StyledText = styled(RN.Text)`
     font-size: 14px;
-    font-family: Roboto;
     color: #808191;
     margin: 0 0 10px 0;
     text-align: center;

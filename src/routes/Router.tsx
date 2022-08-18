@@ -38,7 +38,6 @@ const DrawerNavigation = () => {
                 drawerActiveTintColor: '#6C5ECF',
                 drawerInactiveTintColor: '#808191',
                 drawerLabelStyle: {
-                    fontFamily: 'Roboto-Medium',
                     fontSize: 14
                 },
                 headerStyle: {

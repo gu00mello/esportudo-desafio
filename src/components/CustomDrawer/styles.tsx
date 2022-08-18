@@ -28,5 +28,5 @@ export const StyledView = styled(RN.View) <ViewStyle>`
 export const StyledText = styled(RN.Text) <TextStyle>`
     color: ${prop => prop.textColor || '#808191'};
     font-size: ${prop => prop.textStyle === 'primary' ? '18px' : '14px'};
-    font-family: ${prop => prop.textStyle === 'primary' ? 'Roboto-Medium' : 'Roboto-Regular'};
+    font-weight: ${prop => prop.textStyle === 'primary' ? '600' : '400'};
 `;

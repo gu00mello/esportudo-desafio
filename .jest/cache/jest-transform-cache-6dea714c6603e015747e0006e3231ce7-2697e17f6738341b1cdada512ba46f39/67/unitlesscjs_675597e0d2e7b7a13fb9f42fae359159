@@ -1,9 +1,0 @@
-2d689e6f20b4ba1772c6a5a43f3fe4ac
-'use strict';
-
-if ("test" === "production") {
-  module.exports = require("./unitless.cjs.prod.js");
-} else {
-  module.exports = require("./unitless.cjs.dev.js");
-}
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJtb2R1bGUiLCJleHBvcnRzIiwicmVxdWlyZSJdLCJzb3VyY2VzIjpbInVuaXRsZXNzLmNqcy5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIHN0cmljdCc7XG5cbmlmIChwcm9jZXNzLmVudi5OT0RFX0VOViA9PT0gXCJwcm9kdWN0aW9uXCIpIHtcbiAgbW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwiLi91bml0bGVzcy5janMucHJvZC5qc1wiKTtcbn0gZWxzZSB7XG4gIG1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcIi4vdW5pdGxlc3MuY2pzLmRldi5qc1wiKTtcbn1cbiJdLCJtYXBwaW5ncyI6IkFBQUE7O0FBRUEsSUFBSSxXQUF5QixZQUE3QixFQUEyQztFQUN6Q0EsTUFBTSxDQUFDQyxPQUFQLEdBQWlCQyxPQUFPLENBQUMsd0JBQUQsQ0FBeEI7QUFDRCxDQUZELE1BRU87RUFDTEYsTUFBTSxDQUFDQyxPQUFQLEdBQWlCQyxPQUFPLENBQUMsdUJBQUQsQ0FBeEI7QUFDRCJ9

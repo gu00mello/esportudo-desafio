@@ -39,7 +39,6 @@ export const StyledTag = styled(RN.View)`
 
 export const StyledTagText = styled(RN.Text)`
     font-size: 12px;
-    font-family: Roboto;
     font-weight: 700;
     color: #000;
     margin: 0 0 0 5px;
@@ -48,7 +47,6 @@ export const StyledTagText = styled(RN.Text)`
 export const StyledTitle = styled(RN.Text)`
     max-width: 50%;
     font-size: 20px;
-    font-family: Roboto;
     font-weight: bold;
     color: #fff;
     margin: 5px 0;
@@ -56,7 +54,6 @@ export const StyledTitle = styled(RN.Text)`
 
 export const StyledDiscoverDate = styled(RN.Text)`
     font-size: 12px;
-    font-family: Roboto;
     font-weight: 500;
     color: #fff;
 `;
