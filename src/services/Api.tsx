@@ -1,11 +1,11 @@
-import { API_URL, API_KEY, API_HOST } from '@env';
+import env from 'react-native-dotenv';
 import axios from 'axios';
 
 const RAPIDAPI = axios.create({
-    baseURL: API_URL,
+    baseURL: env.API_URL,
     headers: {
-        'x-rapidapi-key': API_KEY,
-        'x-rapidapi-host': API_HOST
+        'x-rapidapi-key': env.API_KEY,
+        'x-rapidapi-host': env.API_HOST
     }
 });
 

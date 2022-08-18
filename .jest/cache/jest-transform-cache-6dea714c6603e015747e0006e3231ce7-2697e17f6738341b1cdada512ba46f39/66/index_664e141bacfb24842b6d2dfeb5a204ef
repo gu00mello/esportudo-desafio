@@ -1,0 +1,97 @@
+f1050faa7b58ecd43c8685dc02213a06
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/asyncToGenerator"));
+
+var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  var desc = Object.getOwnPropertyDescriptor(m, k);
+
+  if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+    desc = {
+      enumerable: true,
+      get: function get() {
+        return m[k];
+      }
+    };
+  }
+
+  Object.defineProperty(o, k2, desc);
+} : function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  o[k2] = m[k];
+});
+
+var __setModuleDefault = this && this.__setModuleDefault || (Object.create ? function (o, v) {
+  Object.defineProperty(o, "default", {
+    enumerable: true,
+    value: v
+  });
+} : function (o, v) {
+  o["default"] = v;
+});
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+  }
+
+  __setModuleDefault(result, mod);
+
+  return result;
+};
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.useLeagues = exports.LeaguesProvider = exports.LeaguesContext = void 0;
+
+var react_1 = __importStar(require("react"));
+
+var Api_1 = __importDefault(require("../../services/Api"));
+
+exports.LeaguesContext = (0, react_1.createContext)({});
+
+var LeaguesProvider = function LeaguesProvider(_ref) {
+  var children = _ref.children;
+
+  var getLeagues = function () {
+    var _ref2 = (0, _asyncToGenerator2.default)(function* () {
+      try {
+        var response = Api_1.default.get('/leagues');
+        return response;
+      } catch (error) {
+        return error;
+      }
+    });
+
+    return function getLeagues() {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+
+  return React.createElement(exports.LeaguesContext.Provider, {
+    value: {
+      getLeagues: getLeagues
+    }
+  }, children);
+};
+
+exports.LeaguesProvider = LeaguesProvider;
+
+var useLeagues = function useLeagues() {
+  return (0, react_1.useContext)(exports.LeaguesContext);
+};
+
+exports.useLeagues = useLeagues;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUE7O0FBQ0E7O0FBTWFBLHlCQUFpQiwyQkFBa0MsRUFBbEMsQ0FBakI7O0FBRU4sSUFBTUMsZUFBZSxHQUFHLFNBQWxCQSxlQUFrQixPQUFzQjtFQUFBLElBQW5CQyxRQUFtQixRQUFuQkEsUUFBbUI7O0VBQ2pELElBQU1DLFVBQVU7SUFBQSw0Q0FBRyxhQUFXO01BQzFCLElBQUk7UUFDQSxJQUFNQyxRQUFRLEdBQUdDLGNBQVNDLEdBQVQsQ0FBYSxVQUFiLENBQWpCO1FBRUEsT0FBT0YsUUFBUDtNQUNILENBSkQsQ0FJRSxPQUFPRyxLQUFQLEVBQWM7UUFDWixPQUFPQSxLQUFQO01BQ0g7SUFDSixDQVJlOztJQUFBLGdCQUFWSixVQUFVO01BQUE7SUFBQTtFQUFBLEdBQWhCOztFQVVBLE9BQU8sb0JBQUMsT0FBRCxDQUFDLGNBQUQsQ0FBZ0IsUUFBaEI7SUFBeUIsS0FBSyxFQUFFO01BQUVBLFVBQVUsRUFBVkE7SUFBRjtFQUFoQyxHQUNGRCxRQURFLENBQVA7QUFHSCxDQWRNOztBQUFNRiwwQkFBZUMsZUFBZjs7QUFnQk4sSUFBTU8sVUFBVSxHQUFHLFNBQWJBLFVBQWE7RUFBQSxPQUFNLHdCQUFXUixzQkFBWCxDQUFOO0FBQUEsQ0FBbkI7O0FBQU1BLHFCQUFVUSxVQUFWIiwibmFtZXMiOlsiZXhwb3J0cyIsIkxlYWd1ZXNQcm92aWRlciIsImNoaWxkcmVuIiwiZ2V0TGVhZ3VlcyIsInJlc3BvbnNlIiwiQXBpXzEiLCJnZXQiLCJlcnJvciIsInVzZUxlYWd1ZXMiXSwic291cmNlcyI6WyJEOlxccHJvamVjdHNcXEVzcG9ydHVkb1xcc3JjXFxjb250ZXh0XFxMZWFndWVzXFxpbmRleC50c3giXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IGNyZWF0ZUNvbnRleHQsIHVzZUNvbnRleHQgfSBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCBSQVBJREFQSSBmcm9tICcuLi8uLi9zZXJ2aWNlcy9BcGknO1xyXG5cclxudHlwZSBMZWFndWVzQ29udGV4dFR5cGUgPSB7XHJcbiAgICBnZXRMZWFndWVzOiAoKSA9PiBQcm9taXNlPGFueT47XHJcbn1cclxuXHJcbmV4cG9ydCBjb25zdCBMZWFndWVzQ29udGV4dCA9IGNyZWF0ZUNvbnRleHQ8TGVhZ3Vlc0NvbnRleHRUeXBlPih7fSBhcyBMZWFndWVzQ29udGV4dFR5cGUpO1xyXG5cclxuZXhwb3J0IGNvbnN0IExlYWd1ZXNQcm92aWRlciA9ICh7IGNoaWxkcmVuIH06IGFueSkgPT4ge1xyXG4gICAgY29uc3QgZ2V0TGVhZ3VlcyA9IGFzeW5jICgpID0+IHtcclxuICAgICAgICB0cnkge1xyXG4gICAgICAgICAgICBjb25zdCByZXNwb25zZSA9IFJBUElEQVBJLmdldCgnL2xlYWd1ZXMnKTtcclxuXHJcbiAgICAgICAgICAgIHJldHVybiByZXNwb25zZTtcclxuICAgICAgICB9IGNhdGNoIChlcnJvcikge1xyXG4gICAgICAgICAgICByZXR1cm4gZXJyb3I7XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG5cclxuICAgIHJldHVybiA8TGVhZ3Vlc0NvbnRleHQuUHJvdmlkZXIgdmFsdWU9e3sgZ2V0TGVhZ3VlcyB9fT5cclxuICAgICAgICB7Y2hpbGRyZW59XHJcbiAgICA8L0xlYWd1ZXNDb250ZXh0LlByb3ZpZGVyPlxyXG59XHJcblxyXG5leHBvcnQgY29uc3QgdXNlTGVhZ3VlcyA9ICgpID0+IHVzZUNvbnRleHQoTGVhZ3Vlc0NvbnRleHQpOyJdfQ==

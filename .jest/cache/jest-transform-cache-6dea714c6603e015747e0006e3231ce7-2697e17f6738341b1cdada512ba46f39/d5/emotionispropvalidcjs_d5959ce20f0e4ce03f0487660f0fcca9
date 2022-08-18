@@ -1,0 +1,9 @@
+574d760420baa3ab822740cd74cf5093
+'use strict';
+
+if ("test" === "production") {
+  module.exports = require("./emotion-is-prop-valid.cjs.prod.js");
+} else {
+  module.exports = require("./emotion-is-prop-valid.cjs.dev.js");
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJtb2R1bGUiLCJleHBvcnRzIiwicmVxdWlyZSJdLCJzb3VyY2VzIjpbImVtb3Rpb24taXMtcHJvcC12YWxpZC5janMuanMiXSwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBzdHJpY3QnO1xuXG5pZiAocHJvY2Vzcy5lbnYuTk9ERV9FTlYgPT09IFwicHJvZHVjdGlvblwiKSB7XG4gIG1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcIi4vZW1vdGlvbi1pcy1wcm9wLXZhbGlkLmNqcy5wcm9kLmpzXCIpO1xufSBlbHNlIHtcbiAgbW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwiLi9lbW90aW9uLWlzLXByb3AtdmFsaWQuY2pzLmRldi5qc1wiKTtcbn1cbiJdLCJtYXBwaW5ncyI6IkFBQUE7O0FBRUEsSUFBSSxXQUF5QixZQUE3QixFQUEyQztFQUN6Q0EsTUFBTSxDQUFDQyxPQUFQLEdBQWlCQyxPQUFPLENBQUMscUNBQUQsQ0FBeEI7QUFDRCxDQUZELE1BRU87RUFDTEYsTUFBTSxDQUFDQyxPQUFQLEdBQWlCQyxPQUFPLENBQUMsb0NBQUQsQ0FBeEI7QUFDRCJ9

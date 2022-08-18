@@ -1,0 +1,73 @@
+9fbc32f45984708d66a20cfac6065692
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+var _taggedTemplateLiteralLoose2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteralLoose"));
+
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6;
+
+var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  var desc = Object.getOwnPropertyDescriptor(m, k);
+
+  if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+    desc = {
+      enumerable: true,
+      get: function get() {
+        return m[k];
+      }
+    };
+  }
+
+  Object.defineProperty(o, k2, desc);
+} : function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  o[k2] = m[k];
+});
+
+var __setModuleDefault = this && this.__setModuleDefault || (Object.create ? function (o, v) {
+  Object.defineProperty(o, "default", {
+    enumerable: true,
+    value: v
+  });
+} : function (o, v) {
+  o["default"] = v;
+});
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+  }
+
+  __setModuleDefault(result, mod);
+
+  return result;
+};
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.StyledLeagueText = exports.StyledLeagueTitle = exports.StyledLeagueContent = exports.StyledLeagueImage = exports.StyledLeague = exports.StyledContainer = void 0;
+
+var styled_components_1 = __importDefault(require("styled-components"));
+
+var RN = __importStar(require("react-native"));
+
+exports.StyledContainer = (0, styled_components_1.default)(RN.View)(_templateObject || (_templateObject = (0, _taggedTemplateLiteralLoose2.default)(["\n    width: 100%;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n"])));
+exports.StyledLeague = (0, styled_components_1.default)(RN.View)(_templateObject2 || (_templateObject2 = (0, _taggedTemplateLiteralLoose2.default)(["\n    width: 100%;\n    flex-direction: row;\n    align-items: center;\n    justify-content: flex-start;\n    padding: 20px;\n    margin: 10px 0;\n    background-color: ", ";\n"])), function (prop) {
+  return prop.identifier % 2 === 0 ? 'transparent' : '#252836';
+});
+exports.StyledLeagueImage = (0, styled_components_1.default)(RN.Image)(_templateObject3 || (_templateObject3 = (0, _taggedTemplateLiteralLoose2.default)(["\n    width: 35%;\n    height: 100%;\n    border-radius: 10px;\n"])));
+exports.StyledLeagueContent = (0, styled_components_1.default)(RN.View)(_templateObject4 || (_templateObject4 = (0, _taggedTemplateLiteralLoose2.default)(["\n    width: 70%;\n    flex-direction: column;\n    align-items: flex-start;\n    justify-content: flex-start;\n    margin: 0 0 0 10px;\n"])));
+exports.StyledLeagueTitle = (0, styled_components_1.default)(RN.Text)(_templateObject5 || (_templateObject5 = (0, _taggedTemplateLiteralLoose2.default)(["\n    font-size: 16px;\n    font-family: Roboto;\n    font-weight: bold;\n    color: #fff;\n    margin: 0 0 5px 0;\n"])));
+exports.StyledLeagueText = (0, styled_components_1.default)(RN.Text)(_templateObject6 || (_templateObject6 = (0, _taggedTemplateLiteralLoose2.default)(["\n    font-size: 14px;\n    font-family: Roboto;\n    color: #808191;\n    margin: 0 0 5px 0;\n"])));
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTs7QUFDQTs7QUFVYUEsMEJBQWtCLGlDQUFPQyxFQUFFLENBQUNDLElBQVYsQ0FBbEI7QUFPQUYsdUJBQWUsaUNBQU9DLEVBQUUsQ0FBQ0MsSUFBVixDQUFmLDJRQU9XLGNBQUk7RUFBQSxPQUFJQyxJQUFJLENBQUNDLFVBQUwsR0FBa0IsQ0FBbEIsS0FBd0IsQ0FBeEIsR0FBNEIsYUFBNUIsR0FBNEMsU0FBaEQ7QUFBQSxDQVBmO0FBVUFKLDRCQUFvQixpQ0FBT0MsRUFBRSxDQUFDSSxLQUFWLENBQXBCO0FBTUFMLDhCQUFzQixpQ0FBT0MsRUFBRSxDQUFDQyxJQUFWLENBQXRCO0FBUUFGLDRCQUFvQixpQ0FBT0MsRUFBRSxDQUFDSyxJQUFWLENBQXBCO0FBUUFOLDJCQUFtQixpQ0FBT0MsRUFBRSxDQUFDSyxJQUFWLENBQW5CIiwibmFtZXMiOlsiZXhwb3J0cyIsIlJOIiwiVmlldyIsInByb3AiLCJpZGVudGlmaWVyIiwiSW1hZ2UiLCJUZXh0Il0sInNvdXJjZXMiOlsiRDpcXHByb2plY3RzXFxFc3BvcnR1ZG9cXHNyY1xcc2NyZWVuc1xcTGVhZ3Vlc1xcc3R5bGVzLnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgc3R5bGVkIGZyb20gXCJzdHlsZWQtY29tcG9uZW50c1wiO1xyXG5pbXBvcnQgKiBhcyBSTiBmcm9tICdyZWFjdC1uYXRpdmUnO1xyXG5cclxudHlwZSBDb250YWluZXJQcm9wcyA9IFJOLlZpZXdQcm9wcyAmIHtcclxuICAgIGNoaWxkcmVuPzogUmVhY3QuUmVhY3ROb2RlIHwgUmVhY3QuUmVhY3ROb2RlW107XHJcbn1cclxuXHJcbnR5cGUgTGVhZ3VlUHJvcHMgPSBSTi5WaWV3UHJvcHMgJiB7XHJcbiAgICBpZGVudGlmaWVyOiBudW1iZXI7XHJcbn1cclxuXHJcbmV4cG9ydCBjb25zdCBTdHlsZWRDb250YWluZXIgPSBzdHlsZWQoUk4uVmlldykgPENvbnRhaW5lclByb3BzPmBcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuYDtcclxuXHJcbmV4cG9ydCBjb25zdCBTdHlsZWRMZWFndWUgPSBzdHlsZWQoUk4uVmlldykgPExlYWd1ZVByb3BzPmBcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtc3RhcnQ7XHJcbiAgICBwYWRkaW5nOiAyMHB4O1xyXG4gICAgbWFyZ2luOiAxMHB4IDA7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAke3Byb3AgPT4gcHJvcC5pZGVudGlmaWVyICUgMiA9PT0gMCA/ICd0cmFuc3BhcmVudCcgOiAnIzI1MjgzNid9O1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IFN0eWxlZExlYWd1ZUltYWdlID0gc3R5bGVkKFJOLkltYWdlKWBcclxuICAgIHdpZHRoOiAzNSU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IFN0eWxlZExlYWd1ZUNvbnRlbnQgPSBzdHlsZWQoUk4uVmlldylgXHJcbiAgICB3aWR0aDogNzAlO1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBmbGV4LXN0YXJ0O1xyXG4gICAgbWFyZ2luOiAwIDAgMCAxMHB4O1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IFN0eWxlZExlYWd1ZVRpdGxlID0gc3R5bGVkKFJOLlRleHQpYFxyXG4gICAgZm9udC1zaXplOiAxNnB4O1xyXG4gICAgZm9udC1mYW1pbHk6IFJvYm90bztcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgY29sb3I6ICNmZmY7XHJcbiAgICBtYXJnaW46IDAgMCA1cHggMDtcclxuYDtcclxuXHJcbmV4cG9ydCBjb25zdCBTdHlsZWRMZWFndWVUZXh0ID0gc3R5bGVkKFJOLlRleHQpYFxyXG4gICAgZm9udC1zaXplOiAxNHB4O1xyXG4gICAgZm9udC1mYW1pbHk6IFJvYm90bztcclxuICAgIGNvbG9yOiAjODA4MTkxO1xyXG4gICAgbWFyZ2luOiAwIDAgNXB4IDA7XHJcbmA7XHJcbiJdfQ==

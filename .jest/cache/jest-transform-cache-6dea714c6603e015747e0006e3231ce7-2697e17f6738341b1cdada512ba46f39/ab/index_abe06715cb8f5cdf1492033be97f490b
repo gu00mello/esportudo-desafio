@@ -1,0 +1,20 @@
+c1c991ed9906771d3a2c90f0a092115a
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _reactNative = require("react-native");
+
+var _indexIos = _interopRequireDefault(require("./index.ios.js"));
+
+var _indexAndroid = _interopRequireDefault(require("./index.android.js"));
+
+var _indexWindows = _interopRequireDefault(require("./index.windows.js"));
+
+var LinearGradient = _reactNative.Platform.OS === "ios" ? _indexIos.default : _reactNative.Platform.OS === "android" ? _indexAndroid.default : _indexWindows.default;
+var _default = LinearGradient;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJMaW5lYXJHcmFkaWVudCIsIlBsYXRmb3JtIiwiT1MiLCJMaW5lYXJHcmFkaWVudElvcyIsIkxpbmVhckdyYWRpZW50QW5kcm9pZCIsIkxpbmVhckdyYWRpZW50V2luZG93cyJdLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFBsYXRmb3JtIH0gZnJvbSBcInJlYWN0LW5hdGl2ZVwiO1xuaW1wb3J0IExpbmVhckdyYWRpZW50SW9zIGZyb20gXCIuL2luZGV4Lmlvcy5qc1wiO1xuaW1wb3J0IExpbmVhckdyYWRpZW50QW5kcm9pZCBmcm9tIFwiLi9pbmRleC5hbmRyb2lkLmpzXCI7XG5pbXBvcnQgTGluZWFyR3JhZGllbnRXaW5kb3dzIGZyb20gXCIuL2luZGV4LndpbmRvd3MuanNcIjtcblxuY29uc3QgTGluZWFyR3JhZGllbnQgPSBQbGF0Zm9ybS5PUyA9PT0gXCJpb3NcIlxuICA/IExpbmVhckdyYWRpZW50SW9zIDogUGxhdGZvcm0uT1MgPT09IFwiYW5kcm9pZFwiXG4gID8gTGluZWFyR3JhZGllbnRBbmRyb2lkIDogTGluZWFyR3JhZGllbnRXaW5kb3dzO1xuXG5leHBvcnQgZGVmYXVsdCBMaW5lYXJHcmFkaWVudDtcbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUFBOztBQUNBOztBQUNBOztBQUNBOztBQUVBLElBQU1BLGNBQWMsR0FBR0MscUJBQUEsQ0FBU0MsRUFBVCxLQUFnQixLQUFoQixHQUNuQkMsaUJBRG1CLEdBQ0NGLHFCQUFBLENBQVNDLEVBQVQsS0FBZ0IsU0FBaEIsR0FDcEJFLHFCQURvQixHQUNJQyxxQkFGNUI7ZUFJZUwsYyJ9

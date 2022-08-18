@@ -1,0 +1,77 @@
+e273ef18b3f8f5ded308f95485ed24fd
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+var _taggedTemplateLiteralLoose2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteralLoose"));
+
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8;
+
+var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  var desc = Object.getOwnPropertyDescriptor(m, k);
+
+  if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+    desc = {
+      enumerable: true,
+      get: function get() {
+        return m[k];
+      }
+    };
+  }
+
+  Object.defineProperty(o, k2, desc);
+} : function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  o[k2] = m[k];
+});
+
+var __setModuleDefault = this && this.__setModuleDefault || (Object.create ? function (o, v) {
+  Object.defineProperty(o, "default", {
+    enumerable: true,
+    value: v
+  });
+} : function (o, v) {
+  o["default"] = v;
+});
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+  }
+
+  __setModuleDefault(result, mod);
+
+  return result;
+};
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.StyledTeam = exports.Hairline = exports.StyledTableText = exports.StyledTableTitle = exports.StyledTableContent = exports.StyledTableImage = exports.StyledTable = exports.StyledContainer = void 0;
+
+var styled_components_1 = __importDefault(require("styled-components"));
+
+var RN = __importStar(require("react-native"));
+
+exports.StyledContainer = (0, styled_components_1.default)(RN.View)(_templateObject || (_templateObject = (0, _taggedTemplateLiteralLoose2.default)(["\n    width: 100%;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n"])));
+exports.StyledTable = (0, styled_components_1.default)(RN.View)(_templateObject2 || (_templateObject2 = (0, _taggedTemplateLiteralLoose2.default)(["\n    width: 100%;\n    flex-direction: row;\n    align-items: center;\n    justify-content: flex-start;\n    padding: 20px;\n    margin: 10px 0;\n    background-color: ", ";\n"])), function (prop) {
+  return prop.identifier % 2 === 0 ? 'transparent' : '#252836';
+});
+exports.StyledTableImage = (0, styled_components_1.default)(RN.Image)(_templateObject3 || (_templateObject3 = (0, _taggedTemplateLiteralLoose2.default)(["\n    width: 20%;\n    height: 100%;\n    border-radius: 10px;\n"])));
+exports.StyledTableContent = (0, styled_components_1.default)(RN.View)(_templateObject4 || (_templateObject4 = (0, _taggedTemplateLiteralLoose2.default)(["\n    width: ", ";\n    flex-direction: column;\n    align-items: flex-start;\n    justify-content: flex-start;\n    margin: 0 0 0 10px;\n"])), function (prop) {
+  return prop.width || '80%';
+});
+exports.StyledTableTitle = (0, styled_components_1.default)(RN.Text)(_templateObject5 || (_templateObject5 = (0, _taggedTemplateLiteralLoose2.default)(["\n    font-size: 16px;\n    font-family: Roboto;\n    font-weight: bold;\n    color: #fff;\n    margin: 0 0 5px 0;\n"])));
+exports.StyledTableText = (0, styled_components_1.default)(RN.Text)(_templateObject6 || (_templateObject6 = (0, _taggedTemplateLiteralLoose2.default)(["\n    font-size: 14px;\n    font-family: Roboto;\n    color: #808191;\n    margin: 0 0 5px 0;\n"])));
+exports.Hairline = (0, styled_components_1.default)(RN.View)(_templateObject7 || (_templateObject7 = (0, _taggedTemplateLiteralLoose2.default)(["\n    width: 100%;\n    height: 1px;\n    background-color: #252836;\n"])));
+exports.StyledTeam = (0, styled_components_1.default)(RN.View)(_templateObject8 || (_templateObject8 = (0, _taggedTemplateLiteralLoose2.default)(["\n    width: 100%;\n    flex-direction: row;\n    align-items: center;\n    justify-content: flex-start;\n    padding: 20px;\n    margin: 10px 0;\n"])));
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTs7QUFDQTs7QUFjYUEsMEJBQWtCLGlDQUFPQyxFQUFFLENBQUNDLElBQVYsQ0FBbEI7QUFPQUYsc0JBQWMsaUNBQU9DLEVBQUUsQ0FBQ0MsSUFBVixDQUFkLDJRQU9XLGNBQUk7RUFBQSxPQUFJQyxJQUFJLENBQUNDLFVBQUwsR0FBa0IsQ0FBbEIsS0FBd0IsQ0FBeEIsR0FBNEIsYUFBNUIsR0FBNEMsU0FBaEQ7QUFBQSxDQVBmO0FBVUFKLDJCQUFtQixpQ0FBT0MsRUFBRSxDQUFDSSxLQUFWLENBQW5CO0FBTUFMLDZCQUFxQixpQ0FBT0MsRUFBRSxDQUFDQyxJQUFWLENBQXJCLHFPQUNBLGNBQUk7RUFBQSxPQUFJQyxJQUFJLENBQUNHLEtBQUwsSUFBYyxLQUFsQjtBQUFBLENBREo7QUFRQU4sMkJBQW1CLGlDQUFPQyxFQUFFLENBQUNNLElBQVYsQ0FBbkI7QUFRQVAsMEJBQWtCLGlDQUFPQyxFQUFFLENBQUNNLElBQVYsQ0FBbEI7QUFPQVAsbUJBQVcsaUNBQU9DLEVBQUUsQ0FBQ0MsSUFBVixDQUFYO0FBTUFGLHFCQUFhLGlDQUFPQyxFQUFFLENBQUNDLElBQVYsQ0FBYiIsIm5hbWVzIjpbImV4cG9ydHMiLCJSTiIsIlZpZXciLCJwcm9wIiwiaWRlbnRpZmllciIsIkltYWdlIiwid2lkdGgiLCJUZXh0Il0sInNvdXJjZXMiOlsiRDpcXHByb2plY3RzXFxFc3BvcnR1ZG9cXHNyY1xcc2NyZWVuc1xcUGxheWVyc1xcc3R5bGVzLnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgc3R5bGVkIGZyb20gXCJzdHlsZWQtY29tcG9uZW50c1wiO1xyXG5pbXBvcnQgKiBhcyBSTiBmcm9tICdyZWFjdC1uYXRpdmUnO1xyXG5cclxudHlwZSBDb250YWluZXJQcm9wcyA9IFJOLlZpZXdQcm9wcyAmIHtcclxuICAgIGNoaWxkcmVuPzogUmVhY3QuUmVhY3ROb2RlIHwgUmVhY3QuUmVhY3ROb2RlW107XHJcbn1cclxuXHJcbnR5cGUgVGFibGVQcm9wcyA9IFJOLlZpZXdQcm9wcyAmIHtcclxuICAgIGlkZW50aWZpZXI6IG51bWJlcjtcclxufVxyXG5cclxudHlwZSBUYWJsZUNvbnRlbnRQcm9wcyA9IFJOLlZpZXdQcm9wcyAmIHtcclxuICAgIHdpZHRoPzogbnVtYmVyIHwgc3RyaW5nO1xyXG59XHJcblxyXG5leHBvcnQgY29uc3QgU3R5bGVkQ29udGFpbmVyID0gc3R5bGVkKFJOLlZpZXcpIDxDb250YWluZXJQcm9wcz5gXHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgU3R5bGVkVGFibGUgPSBzdHlsZWQoUk4uVmlldykgPFRhYmxlUHJvcHM+YFxyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDtcclxuICAgIHBhZGRpbmc6IDIwcHg7XHJcbiAgICBtYXJnaW46IDEwcHggMDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICR7cHJvcCA9PiBwcm9wLmlkZW50aWZpZXIgJSAyID09PSAwID8gJ3RyYW5zcGFyZW50JyA6ICcjMjUyODM2J307XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgU3R5bGVkVGFibGVJbWFnZSA9IHN0eWxlZChSTi5JbWFnZSlgXHJcbiAgICB3aWR0aDogMjAlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcclxuYDtcclxuXHJcbmV4cG9ydCBjb25zdCBTdHlsZWRUYWJsZUNvbnRlbnQgPSBzdHlsZWQoUk4uVmlldykgPFRhYmxlQ29udGVudFByb3BzPmBcclxuICAgIHdpZHRoOiAke3Byb3AgPT4gcHJvcC53aWR0aCB8fCAnODAlJ307XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtc3RhcnQ7XHJcbiAgICBtYXJnaW46IDAgMCAwIDEwcHg7XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgU3R5bGVkVGFibGVUaXRsZSA9IHN0eWxlZChSTi5UZXh0KWBcclxuICAgIGZvbnQtc2l6ZTogMTZweDtcclxuICAgIGZvbnQtZmFtaWx5OiBSb2JvdG87XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIGNvbG9yOiAjZmZmO1xyXG4gICAgbWFyZ2luOiAwIDAgNXB4IDA7XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgU3R5bGVkVGFibGVUZXh0ID0gc3R5bGVkKFJOLlRleHQpYFxyXG4gICAgZm9udC1zaXplOiAxNHB4O1xyXG4gICAgZm9udC1mYW1pbHk6IFJvYm90bztcclxuICAgIGNvbG9yOiAjODA4MTkxO1xyXG4gICAgbWFyZ2luOiAwIDAgNXB4IDA7XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgSGFpcmxpbmUgPSBzdHlsZWQoUk4uVmlldylgXHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogMXB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzI1MjgzNjtcclxuYDtcclxuXHJcbmV4cG9ydCBjb25zdCBTdHlsZWRUZWFtID0gc3R5bGVkKFJOLlZpZXcpYFxyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDtcclxuICAgIHBhZGRpbmc6IDIwcHg7XHJcbiAgICBtYXJnaW46IDEwcHggMDtcclxuYDtcclxuIl19

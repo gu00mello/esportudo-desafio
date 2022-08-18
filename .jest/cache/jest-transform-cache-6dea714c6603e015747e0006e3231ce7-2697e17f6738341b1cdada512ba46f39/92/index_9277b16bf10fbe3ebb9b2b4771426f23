@@ -1,0 +1,46 @@
+f2a1154caeb221d598cb366ac8d31199
+"use strict";
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(require("react"));
+
+var react_native_1 = require("react-native");
+
+var styles_1 = require("./styles");
+
+var react_native_2 = require("react-native");
+
+var News_1 = __importDefault(require("../../components/News"));
+
+var Home = function Home(_ref) {
+  var navigation = _ref.navigation;
+  return React.createElement(react_native_2.ScrollView, null, React.createElement(styles_1.StyledContainer, null, React.createElement(styles_1.StyledGradient, {
+    start: {
+      x: 0,
+      y: 0
+    },
+    end: {
+      x: 1,
+      y: 0
+    },
+    colors: ['#4C4478', '#0C0C69']
+  }, React.createElement(styles_1.StyledTag, null, React.createElement(react_native_1.Image, {
+    source: require('../../assets/iconly.soccer.png')
+  }), React.createElement(styles_1.StyledTagText, null, "Football")), React.createElement(styles_1.StyledTitle, null, "Zidane and Real Madrid: Where it went wrong and what's next"), React.createElement(styles_1.StyledDiscoverDate, null, "Tomorrow, 10:00 AM"), React.createElement(styles_1.StyledDiscoverImage, {
+    source: require('../../assets/discover.image.png')
+  })), React.createElement(News_1.default, {
+    navigation: navigation
+  })));
+};
+
+exports.default = Home;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7O0FBQUE7O0FBQ0E7O0FBQ0E7O0FBVUE7O0FBQ0E7O0FBRUEsSUFBTUEsSUFBSSxHQUFHLFNBQVBBLElBQU8sT0FBd0I7RUFBQSxJQUFyQkMsVUFBcUIsUUFBckJBLFVBQXFCO0VBQ2pDLE9BQVEsb0JBQUMsY0FBRCxDQUFDLFVBQUQsUUFDSixvQkFBQyxRQUFELENBQUMsZUFBRCxRQUNJLG9CQUFDLFFBQUQsQ0FBQyxjQUFEO0lBQ0ksS0FBSyxFQUFFO01BQUVDLENBQUMsRUFBRSxDQUFMO01BQVFDLENBQUMsRUFBRTtJQUFYLENBRFg7SUFFSSxHQUFHLEVBQUU7TUFBRUQsQ0FBQyxFQUFFLENBQUw7TUFBUUMsQ0FBQyxFQUFFO0lBQVgsQ0FGVDtJQUdJLE1BQU0sRUFBRSxDQUFDLFNBQUQsRUFBWSxTQUFaO0VBSFosR0FLSSxvQkFBQyxRQUFELENBQUMsU0FBRCxRQUNJLG9CQUFDLGNBQUQsQ0FBQyxLQUFEO0lBQU8sTUFBTSxFQUFFQyxPQUFPLENBQUMsZ0NBQUQ7RUFBdEIsRUFESixFQUVJLG9CQUFDLFFBQUQsQ0FBQyxhQUFELG1CQUZKLENBTEosRUFTSSxvQkFBQyxRQUFELENBQUMsV0FBRCxzRUFUSixFQVlJLG9CQUFDLFFBQUQsQ0FBQyxrQkFBRCw2QkFaSixFQWVJLG9CQUFDLFFBQUQsQ0FBQyxtQkFBRDtJQUFxQixNQUFNLEVBQUVBLE9BQU8sQ0FBQyxpQ0FBRDtFQUFwQyxFQWZKLENBREosRUFrQkksb0JBQUMsTUFBRCxDQUFDLE9BQUQ7SUFBTSxVQUFVLEVBQUVIO0VBQWxCLEVBbEJKLENBREksQ0FBUjtBQXVCSCxDQXhCRDs7QUEwQkFJLGtCQUFlTCxJQUFmIiwibmFtZXMiOlsiSG9tZSIsIm5hdmlnYXRpb24iLCJ4IiwieSIsInJlcXVpcmUiLCJleHBvcnRzIl0sInNvdXJjZXMiOlsiRDpcXHByb2plY3RzXFxFc3BvcnR1ZG9cXHNyY1xcc2NyZWVuc1xcSG9tZVxcaW5kZXgudHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcclxuaW1wb3J0IHsgSW1hZ2UgfSBmcm9tIFwicmVhY3QtbmF0aXZlXCI7XHJcbmltcG9ydCB7XHJcbiAgICBTdHlsZWRDb250YWluZXIsXHJcbiAgICBTdHlsZWRHcmFkaWVudCxcclxuICAgIFN0eWxlZERpc2NvdmVySW1hZ2UsXHJcbiAgICBTdHlsZWRUYWcsXHJcbiAgICBTdHlsZWRUYWdUZXh0LFxyXG4gICAgU3R5bGVkVGl0bGUsXHJcbiAgICBTdHlsZWREaXNjb3ZlckRhdGVcclxufSBmcm9tICcuL3N0eWxlcyc7XHJcblxyXG5pbXBvcnQgeyBTY3JvbGxWaWV3IH0gZnJvbSBcInJlYWN0LW5hdGl2ZVwiO1xyXG5pbXBvcnQgTmV3cyBmcm9tIFwiLi4vLi4vY29tcG9uZW50cy9OZXdzXCI7XHJcblxyXG5jb25zdCBIb21lID0gKHsgbmF2aWdhdGlvbiB9OiBhbnkpID0+IHtcclxuICAgIHJldHVybiAoPFNjcm9sbFZpZXc+XHJcbiAgICAgICAgPFN0eWxlZENvbnRhaW5lcj5cclxuICAgICAgICAgICAgPFN0eWxlZEdyYWRpZW50XHJcbiAgICAgICAgICAgICAgICBzdGFydD17eyB4OiAwLCB5OiAwIH19XHJcbiAgICAgICAgICAgICAgICBlbmQ9e3sgeDogMSwgeTogMCB9fVxyXG4gICAgICAgICAgICAgICAgY29sb3JzPXtbJyM0QzQ0NzgnLCAnIzBDMEM2OSddfVxyXG4gICAgICAgICAgICA+XHJcbiAgICAgICAgICAgICAgICA8U3R5bGVkVGFnPlxyXG4gICAgICAgICAgICAgICAgICAgIDxJbWFnZSBzb3VyY2U9e3JlcXVpcmUoJy4uLy4uL2Fzc2V0cy9pY29ubHkuc29jY2VyLnBuZycpfSAvPlxyXG4gICAgICAgICAgICAgICAgICAgIDxTdHlsZWRUYWdUZXh0PkZvb3RiYWxsPC9TdHlsZWRUYWdUZXh0PlxyXG4gICAgICAgICAgICAgICAgPC9TdHlsZWRUYWc+XHJcbiAgICAgICAgICAgICAgICA8U3R5bGVkVGl0bGU+XHJcbiAgICAgICAgICAgICAgICAgICAgWmlkYW5lIGFuZCBSZWFsIE1hZHJpZDogV2hlcmUgaXQgd2VudCB3cm9uZyBhbmQgd2hhdCdzIG5leHRcclxuICAgICAgICAgICAgICAgIDwvU3R5bGVkVGl0bGU+XHJcbiAgICAgICAgICAgICAgICA8U3R5bGVkRGlzY292ZXJEYXRlPlxyXG4gICAgICAgICAgICAgICAgICAgIFRvbW9ycm93LCAxMDowMCBBTVxyXG4gICAgICAgICAgICAgICAgPC9TdHlsZWREaXNjb3ZlckRhdGU+XHJcbiAgICAgICAgICAgICAgICA8U3R5bGVkRGlzY292ZXJJbWFnZSBzb3VyY2U9e3JlcXVpcmUoJy4uLy4uL2Fzc2V0cy9kaXNjb3Zlci5pbWFnZS5wbmcnKX0gLz5cclxuICAgICAgICAgICAgPC9TdHlsZWRHcmFkaWVudD5cclxuICAgICAgICAgICAgPE5ld3MgbmF2aWdhdGlvbj17bmF2aWdhdGlvbn0gLz5cclxuICAgICAgICA8L1N0eWxlZENvbnRhaW5lcj5cclxuICAgIDwvU2Nyb2xsVmlldz5cclxuICAgICk7XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IEhvbWU7Il19

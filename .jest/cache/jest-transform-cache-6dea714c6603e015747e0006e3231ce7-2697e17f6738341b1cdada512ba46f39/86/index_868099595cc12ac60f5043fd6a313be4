@@ -1,0 +1,110 @@
+73870e5ed243f7d0a028d84b788d72d2
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+var _slicedToArray2 = _interopRequireDefault(require("@babel/runtime/helpers/slicedToArray"));
+
+var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  var desc = Object.getOwnPropertyDescriptor(m, k);
+
+  if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+    desc = {
+      enumerable: true,
+      get: function get() {
+        return m[k];
+      }
+    };
+  }
+
+  Object.defineProperty(o, k2, desc);
+} : function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  o[k2] = m[k];
+});
+
+var __setModuleDefault = this && this.__setModuleDefault || (Object.create ? function (o, v) {
+  Object.defineProperty(o, "default", {
+    enumerable: true,
+    value: v
+  });
+} : function (o, v) {
+  o["default"] = v;
+});
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+  }
+
+  __setModuleDefault(result, mod);
+
+  return result;
+};
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var React = __importStar(require("react"));
+
+var react_1 = require("react");
+
+var Leagues_1 = require("../../context/Leagues");
+
+var react_native_1 = require("react-native");
+
+var styles_1 = require("./styles");
+
+var Loading_1 = __importDefault(require("../../components/Loading"));
+
+var Leagues = function Leagues(_ref) {
+  var navigation = _ref.navigation;
+
+  var _ref2 = (0, Leagues_1.useLeagues)(),
+      getLeagues = _ref2.getLeagues;
+
+  var _ref3 = (0, react_1.useState)(true),
+      _ref4 = (0, _slicedToArray2.default)(_ref3, 2),
+      loading = _ref4[0],
+      setLoading = _ref4[1];
+
+  var _ref5 = (0, react_1.useState)([]),
+      _ref6 = (0, _slicedToArray2.default)(_ref5, 2),
+      leagues = _ref6[0],
+      setLeagues = _ref6[1];
+
+  (0, react_1.useEffect)(function () {
+    getLeagues().then(function (response) {
+      if (response.status === 200) {
+        setLeagues(response.data.response);
+        setLoading(false);
+      } else setLoading(false);
+    });
+  }, []);
+  return React.createElement(styles_1.StyledContainer, null, loading ? React.createElement(Loading_1.default, {
+    name: "Leagues"
+  }) : React.createElement(react_native_1.ScrollView, null, leagues.map(function (league, index) {
+    return React.createElement(styles_1.StyledLeague, {
+      key: index,
+      identifier: index
+    }, React.createElement(styles_1.StyledLeagueImage, {
+      resizeMode: "contain",
+      source: {
+        uri: league.league.logo
+      }
+    }), React.createElement(styles_1.StyledLeagueContent, null, React.createElement(styles_1.StyledLeagueTitle, null, league.league.name), React.createElement(styles_1.StyledLeagueText, null, "League  \u2022  ", league.country.name, " - ", league.country.code), React.createElement(styles_1.StyledLeagueText, null, "Season 2022")));
+  })));
+};
+
+exports.default = Leagues;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7QUFRQTs7QUFFQSxJQUFNQSxPQUFPLEdBQUcsU0FBVkEsT0FBVSxPQUF3QjtFQUFBLElBQXJCQyxVQUFxQixRQUFyQkEsVUFBcUI7O0VBQ3BDLFlBQXVCLDJCQUF2QjtFQUFBLElBQVFDLFVBQVIsU0FBUUEsVUFBUjs7RUFFQSxZQUE4QixzQkFBUyxJQUFULENBQTlCO0VBQUE7RUFBQSxJQUFPQyxPQUFQO0VBQUEsSUFBZ0JDLFVBQWhCOztFQUNBLFlBQThCLHNCQUFTLEVBQVQsQ0FBOUI7RUFBQTtFQUFBLElBQU9DLE9BQVA7RUFBQSxJQUFnQkMsVUFBaEI7O0VBRUEsdUJBQVUsWUFBSztJQUNYSixVQUFVLEdBQUdLLElBQWIsQ0FBa0Isa0JBQVEsRUFBRztNQUN6QixJQUFJQyxRQUFRLENBQUNDLE1BQVQsS0FBb0IsR0FBeEIsRUFBNkI7UUFDekJILFVBQVUsQ0FBQ0UsUUFBUSxDQUFDRSxJQUFULENBQWNGLFFBQWYsQ0FBVjtRQUNBSixVQUFVLENBQUMsS0FBRCxDQUFWO01BQ0gsQ0FIRCxNQUdPQSxVQUFVLENBQUMsS0FBRCxDQUFWO0lBQ1YsQ0FMRDtFQU1ILENBUEQsRUFPRyxFQVBIO0VBU0EsT0FDSSxvQkFBQyxRQUFELENBQUMsZUFBRCxRQUNLRCxPQUFPLEdBQUcsb0JBQUMsU0FBRCxDQUFDLE9BQUQ7SUFBUSxJQUFJLEVBQUM7RUFBYixFQUFILEdBQ0osb0JBQUMsY0FBRCxDQUFDLFVBQUQsUUFDS0UsT0FBTyxDQUFDTSxHQUFSLENBQVksVUFBQ0MsTUFBRCxFQUFjQyxLQUFkLEVBQStCO0lBQ3hDLE9BQU8sb0JBQUMsUUFBRCxDQUFDLFlBQUQ7TUFBYyxHQUFHLEVBQUVBLEtBQW5CO01BQTBCLFVBQVUsRUFBRUE7SUFBdEMsR0FDSCxvQkFBQyxRQUFELENBQUMsaUJBQUQ7TUFDSSxVQUFVLEVBQUMsU0FEZjtNQUVJLE1BQU0sRUFBRTtRQUFFQyxHQUFHLEVBQUVGLE1BQU0sQ0FBQ0EsTUFBUCxDQUFjRztNQUFyQjtJQUZaLEVBREcsRUFJSCxvQkFBQyxRQUFELENBQUMsbUJBQUQsUUFDSSxvQkFBQyxRQUFELENBQUMsaUJBQUQsUUFBb0JILE1BQU0sQ0FBQ0EsTUFBUCxDQUFjSSxJQUFsQyxDQURKLEVBRUksb0JBQUMsUUFBRCxDQUFDLGdCQUFELDRCQUE4QkosTUFBTSxDQUFDSyxPQUFQLENBQWVELElBQTdDLFNBQXNESixNQUFNLENBQUNLLE9BQVAsQ0FBZUMsSUFBckUsQ0FGSixFQUdJLG9CQUFDLFFBQUQsQ0FBQyxnQkFBRCxzQkFISixDQUpHLENBQVA7RUFVSCxDQVhBLENBREwsQ0FGUixDQURKO0FBbUJILENBbENEOztBQW9DQUMsa0JBQWVuQixPQUFmIiwibmFtZXMiOlsiTGVhZ3VlcyIsIm5hdmlnYXRpb24iLCJnZXRMZWFndWVzIiwibG9hZGluZyIsInNldExvYWRpbmciLCJsZWFndWVzIiwic2V0TGVhZ3VlcyIsInRoZW4iLCJyZXNwb25zZSIsInN0YXR1cyIsImRhdGEiLCJtYXAiLCJsZWFndWUiLCJpbmRleCIsInVyaSIsImxvZ28iLCJuYW1lIiwiY291bnRyeSIsImNvZGUiLCJleHBvcnRzIl0sInNvdXJjZXMiOlsiRDpcXHByb2plY3RzXFxFc3BvcnR1ZG9cXHNyY1xcc2NyZWVuc1xcTGVhZ3Vlc1xcaW5kZXgudHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAqIGFzICBSZWFjdCBmcm9tIFwicmVhY3RcIjtcclxuaW1wb3J0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCB9IGZyb20gXCJyZWFjdFwiO1xyXG5pbXBvcnQgeyB1c2VMZWFndWVzIH0gZnJvbSBcIi4uLy4uL2NvbnRleHQvTGVhZ3Vlc1wiO1xyXG5pbXBvcnQgeyBTY3JvbGxWaWV3IH0gZnJvbSBcInJlYWN0LW5hdGl2ZVwiO1xyXG5pbXBvcnQge1xyXG4gICAgU3R5bGVkQ29udGFpbmVyLFxyXG4gICAgU3R5bGVkTGVhZ3VlLFxyXG4gICAgU3R5bGVkTGVhZ3VlQ29udGVudCxcclxuICAgIFN0eWxlZExlYWd1ZVRpdGxlLFxyXG4gICAgU3R5bGVkTGVhZ3VlSW1hZ2UsXHJcbiAgICBTdHlsZWRMZWFndWVUZXh0XHJcbn0gZnJvbSAnLi9zdHlsZXMnO1xyXG5pbXBvcnQgTG9hZGVyIGZyb20gXCIuLi8uLi9jb21wb25lbnRzL0xvYWRpbmdcIjtcclxuXHJcbmNvbnN0IExlYWd1ZXMgPSAoeyBuYXZpZ2F0aW9uIH06IGFueSkgPT4ge1xyXG4gICAgY29uc3QgeyBnZXRMZWFndWVzIH0gPSB1c2VMZWFndWVzKCk7XHJcblxyXG4gICAgY29uc3QgW2xvYWRpbmcsIHNldExvYWRpbmddID0gdXNlU3RhdGUodHJ1ZSk7XHJcbiAgICBjb25zdCBbbGVhZ3Vlcywgc2V0TGVhZ3Vlc10gPSB1c2VTdGF0ZShbXSk7XHJcblxyXG4gICAgdXNlRWZmZWN0KCgpID0+IHtcclxuICAgICAgICBnZXRMZWFndWVzKCkudGhlbihyZXNwb25zZSA9PiB7XHJcbiAgICAgICAgICAgIGlmIChyZXNwb25zZS5zdGF0dXMgPT09IDIwMCkge1xyXG4gICAgICAgICAgICAgICAgc2V0TGVhZ3VlcyhyZXNwb25zZS5kYXRhLnJlc3BvbnNlKTtcclxuICAgICAgICAgICAgICAgIHNldExvYWRpbmcoZmFsc2UpO1xyXG4gICAgICAgICAgICB9IGVsc2Ugc2V0TG9hZGluZyhmYWxzZSk7XHJcbiAgICAgICAgfSlcclxuICAgIH0sIFtdKTtcclxuXHJcbiAgICByZXR1cm4gKFxyXG4gICAgICAgIDxTdHlsZWRDb250YWluZXI+XHJcbiAgICAgICAgICAgIHtsb2FkaW5nID8gPExvYWRlciBuYW1lPVwiTGVhZ3Vlc1wiIC8+IDpcclxuICAgICAgICAgICAgICAgIDxTY3JvbGxWaWV3PlxyXG4gICAgICAgICAgICAgICAgICAgIHtsZWFndWVzLm1hcCgobGVhZ3VlOiBhbnksIGluZGV4OiBudW1iZXIpID0+IHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuIDxTdHlsZWRMZWFndWUga2V5PXtpbmRleH0gaWRlbnRpZmllcj17aW5kZXh9PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPFN0eWxlZExlYWd1ZUltYWdlXHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcmVzaXplTW9kZT1cImNvbnRhaW5cIlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNvdXJjZT17eyB1cmk6IGxlYWd1ZS5sZWFndWUubG9nbyB9fSAvPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPFN0eWxlZExlYWd1ZUNvbnRlbnQ+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPFN0eWxlZExlYWd1ZVRpdGxlPntsZWFndWUubGVhZ3VlLm5hbWV9PC9TdHlsZWRMZWFndWVUaXRsZT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8U3R5bGVkTGVhZ3VlVGV4dD5MZWFndWUgIOKAoiAge2xlYWd1ZS5jb3VudHJ5Lm5hbWV9IC0ge2xlYWd1ZS5jb3VudHJ5LmNvZGV9PC9TdHlsZWRMZWFndWVUZXh0PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxTdHlsZWRMZWFndWVUZXh0PlNlYXNvbiAyMDIyPC9TdHlsZWRMZWFndWVUZXh0PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9TdHlsZWRMZWFndWVDb250ZW50PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L1N0eWxlZExlYWd1ZT5cclxuICAgICAgICAgICAgICAgICAgICB9KX1cclxuICAgICAgICAgICAgICAgIDwvU2Nyb2xsVmlldz59XHJcbiAgICAgICAgPC9TdHlsZWRDb250YWluZXI+XHJcbiAgICApO1xyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCBMZWFndWVzOyJdfQ==
